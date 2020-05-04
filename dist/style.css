@@ -39,13 +39,19 @@ body {
   content: "write something here..";
   color: grey;
   font-style: italic;
-  border: 1px solid #ccc;
+  border: 1px solid #dedede;
+  width: 100%;
+  border-radius: 4px;
+  padding: 5px;
 }
 .text-sale[contentEditable]:empty:not(:focus):before {
-  content: "$9999.99";
+  content: "$9999.00";
   color: var(--white);
   font-style: italic;
-  border: 1px solid transparent;
+  border: 1px solid #dedede;
+  width: 100%;
+  border-radius: 4px;
+  padding: 5px;
 }
 .mainWrapper {
   width: 700px;
@@ -75,6 +81,9 @@ body {
 .mainWrapper .cat-title {
   margin-top: 3rem;
   text-align: center;
+}
+.mainWrapper .cat-title span {
+  display: block;
 }
 .mainWrapper .body .product-name {
   font-size: 2.8rem;
@@ -119,22 +128,25 @@ body {
 .mainWrapper .footer {
   border: 2px solid var(--grey);
   margin: 60px 0;
-  padding: 10px 10px;
 }
 .mainWrapper .footer div {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 2fr 3fr;
   align-items: start;
   text-align: left;
-  padding-bottom: 10px;
+  margin: 2rem 0;
+  padding-left: 2rem;
+}
+.mainWrapper .footer div .others {
+  padding: 1rem;
 }
 .mainWrapper .footer div :first-child {
   font-weight: 600;
   text-align: left;
 }
-.mainWrapper .footer div:last-child {
+/* .mainWrapper .footer div:last-child {
   padding-bottom: 0;
-}
+} */
 button {
   font-weight: bold;
   padding: 5px 15px;
@@ -172,8 +184,8 @@ button:hover {
 .sale h4 {
   margin: 5px 0;
   font-size: 1.5rem;
-  font-weight: 200;
-  letter-spacing: 0.2rem;
+  /* font-weight: 200; */
+  /* letter-spacing: 0.2rem; */
 }
 .sale .green {
   background-color: var(--theme-pri);
@@ -199,4 +211,27 @@ button:hover {
   background-color: antiquewhite;
   padding: 1rem;
   margin: 1rem auto;
+}
+
+/* index3 */
+.index3 {
+  text-align: center;
+  margin: 3rem 0;
+}
+.index3 .clearance h2 {
+  font-size: 3rem;
+  color: var(--theme-ter);
+}
+
+.index3 .clearance small {
+  font-size: 1.4rem;
+  color: var(--theme-sec);
+}
+
+.index3 canvas {
+  background-color: antiquewhite;
+  width: 100%;
+  margin-top: 1rem;
+  object-fit: cover;
+  height: 400px;
 }
