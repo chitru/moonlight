@@ -176,6 +176,16 @@
         const content = document.getElementById("footer");
         content.appendChild(div);
       });
+
+      // toggle selected item
+      let tr = document.querySelectorAll(".mainWrapper tbody tr");
+
+      for (i of tr) {
+        i.addEventListener("click", function () {
+          this.classList.toggle("trBg");
+        });
+      }
+      // tr.classList.toggle("trBg");
     </script>
   </body>
 </html>

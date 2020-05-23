@@ -125,6 +125,17 @@ body {
 .mainWrapper .table tr td span {
   font-weight: normal;
 }
+.mainWrapper tbody tr:hover {
+  cursor: pointer;
+}
+.trBg {
+  background-color: #607d8b;
+  color: #fff;
+}
+.trBg:hover {
+  background-color: #607d8b !important;
+  color: #fff;
+}
 .mainWrapper .footer {
   border: 2px solid var(--grey);
   margin: 60px 0;
