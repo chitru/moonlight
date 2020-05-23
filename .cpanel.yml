@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/skmfurniture/apps/
+    - export DEPLOYPATH=/home/skmfurniture/apps/moonlight/dist/
     - /bin/cp -R src $DEPLOYPATH
