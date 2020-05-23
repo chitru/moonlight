@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/skmfurniture/apps/
-    - /bin/cp -R images $DEPLOYPATH
+    - /bin/cp -R src $DEPLOYPATH
