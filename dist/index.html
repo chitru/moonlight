@@ -50,9 +50,13 @@
         color: #717171;
       }
       footer {
-        display: flex;
         border-top: 1px solid #eee;
+      }
+      footer .content {
+        display: flex;
         padding: 1em 0;
+        bottom: 0;
+        position: fixed;
       }
     </style>
   </head>
@@ -72,7 +76,9 @@
       <a href="#"><div class="tool">Ads</div></a>
     </section>
     <footer>
-      Made with 💖
+      <div class="content">
+        Made with 💖
+      </div>
     </footer>
   </body>
 </html>
